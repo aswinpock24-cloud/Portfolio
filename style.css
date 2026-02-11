@@ -569,6 +569,10 @@ body {
     color: white;
 }
 
+.contact-box span {
+    font-size: 0.9rem;
+}
+
 /* Footer */
 .footer {
     margin-top: 6rem;
