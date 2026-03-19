@@ -360,8 +360,8 @@ body {
 
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(max(150px, 40%), 1fr));
+    gap: 1.5rem;
 }
 
 .stat-item {
@@ -388,8 +388,8 @@ body {
 /* Skills Section */
 .skills-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1.5rem;
 }
 
 .skill-category {
@@ -443,7 +443,7 @@ body {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 2rem;
 }
 
@@ -495,6 +495,7 @@ body {
 
 .project-tech {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
     font-size: 0.85rem;
@@ -512,8 +513,8 @@ body {
 
 .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1.5rem;
 }
 
 .cert-item {
@@ -536,8 +537,8 @@ body {
 /* Contact Section */
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 1.5rem;
     margin-top: 3rem;
 }
 
@@ -780,6 +781,14 @@ body {
 
     .project-card {
         margin: 0;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero-image-container {
